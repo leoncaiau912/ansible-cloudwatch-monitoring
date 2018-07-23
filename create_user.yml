@@ -1,0 +1,12 @@
+---
+- name: create user
+  hosts: web
+  user: ubuntu
+  gather_facts: false
+ 
+  vars:
+  - user: "wendll"
+ 
+  tasks:
+  - name: create {{ user }} on aws
+    user: name="{{ user }}"

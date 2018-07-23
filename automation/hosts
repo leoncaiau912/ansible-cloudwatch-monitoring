@@ -1,0 +1,5 @@
+[aws]
+52.64.30.129        ansible_ssh_private_key_file=/home/leon/.docker/machine/machines/leon-docker/id_rsa
+52.64.30.129        ansible_ssh_user=ubuntu
+
+

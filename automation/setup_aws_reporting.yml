@@ -1,0 +1,7 @@
+---
+- hosts: aws
+  remote_user: ubuntu
+
+  roles:
+
+     - role: aws_monitoring
