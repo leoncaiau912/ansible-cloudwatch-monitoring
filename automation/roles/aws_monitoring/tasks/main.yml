@@ -23,4 +23,4 @@
   file: path=/home/ubuntu/CloudWatchMonitoringScripts-v1.1.0 state=absent
 - name: setup crontab reporting to aws cloud
   become: yes
-  cron: cron_file="aws-mon" user="ubuntu" name="report aws" minute="5" job="~/aws-scripts-mon/mon-put-instance-data.pl --mem-util --mem-used --mem-avail --disk-path=/ --disk-path=/home --disk-space-avail  --disk-space-used --disk-space-util >/dev/null 2>&1"
+  cron: cron_file="aws-mon" user="ubuntu" name="report aws" minute="*/5" job="~/aws-scripts-mon/mon-put-instance-data.pl --mem-util --mem-used --mem-avail --disk-path=/ --disk-path=/home --disk-space-avail  --disk-space-used --disk-space-util >/dev/null 2>&1"
